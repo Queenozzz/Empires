@@ -4,6 +4,9 @@
     padding: 0;
    
 }
+html{
+    scroll-behavior: smooth;
+}
 
 
 #conutinent1{
@@ -324,6 +327,7 @@ footer {
     border-top-left-radius: 125px;
     font-size: 13px;
     line-height: 20px;
+   
 
 }
 
@@ -515,12 +519,108 @@ hr {
 }
 
 
+#Expoilt{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+    color: #111222;
+}
+
+.containers{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
 
 
-@media(max-width:1000px) {
+
+.title {
+    color: #333;
+    font-size: 4rem;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+   
+}
+
+.contents{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contents .images{
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    overflow: hidden;
+
+}
+
+.contents .images img{
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+.contents .boxs, .contents .boxs.boxes{
+    z-index: 222;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.151);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(255, 255, 255, 0.027);
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(47, 160, 252, 0.801); 
+    transform: translate(-20px, 50px);
+   
+  
+   
+}
+ .contents .boxs.boxes {
+    transform: translate(50px, -20px);
+
+ }
+
+.contents .boxs p{
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.titles{
+    font-size: 3rem;
+    margin: 40px;
+
+}
+
+
+
+
+@media(max-width: 992px){
+    
+
+
     .search-box button {
         position: absolute;
     }
+
+    header.head-box{
+        position: sticky;
+        z-index: 1000;
+    }
+      
+    
 
     header ul {
 
@@ -541,13 +641,6 @@ hr {
         width: 100%;
     }
 
-    header label {
-        display: block;
-        width: 100px;
-        text-align: center;
-    }
-
-
 
     header ul li ul {
         position: relative;
@@ -562,6 +655,12 @@ hr {
     header ul li ul li {
         width: 100%;
         left: 0;
+    }
+
+    header label {
+        display: block;
+        width: 100px;
+        text-align: center;
     }
 
     .menu-bar #close-icons{
@@ -580,6 +679,7 @@ hr {
     #check1:checked~ul {
         left: 0;
     }
+   
 
     .content .text-box {
         width: 797px;
@@ -595,4 +695,122 @@ hr {
     .footer-col:nth-child(3) {
         flex-basis: 50%;
     }
+
+    
+    .contents .images{
+        width: 690px;
+        position: relative;
+        overflow: hidden;
+
+    }
+   
+
+    .title{
+        font-size: 3.2rem;
+    }
+
+    .titles{
+        font-size: 2.2rem;
+      
+
+    }
+
 }
+
+@media(max-width: 768px){
+    
+    #Expoilt{
+        position: relative;
+      
+    }
+    .contents{
+        width: 100%; 
+        height: 100vh;
+        display: block;
+    }
+
+    .contents .images{
+        position: relative;
+        max-width: 100%;
+        overflow: hidden;
+        
+    
+    }
+
+    .contents .boxs, .contents .boxs.boxes{
+        transform: translate(-2.75rem, 0);
+        margin-left: 50px;
+        max-width: 89rem;
+        padding: 1.75rem;
+        position: relative;
+        z-index: 1;
+   
+    }
+   
+    .contents .boxs{
+        margin-top: -5rem;
+        z-index: 222;
+    }
+
+    .contents .boxs.boxes{
+        margin-top: 26rem ;
+        position: absolute;
+        z-index: 222;
+    }
+
+
+    .title{
+        font-size: 2.3rem;
+       
+
+    }
+
+    footer {
+        bottom: unset;
+        margin-top: 15rem;
+    }
+
+     .footer-col {
+         flex-basis: 100%;
+
+
+     }
+
+     .footer-col:nth-child(2),
+     .footer-col:nth-child(3) {
+         flex-basis: 100%;
+     }
+}
+
+
+@media(max-width:600px){
+
+
+    
+    .contents .images {
+        max-width: 500px;
+    
+    }
+    
+    .contents .boxs, .contents .boxs.boxes{
+        transform: translate(-2.5rem, 0);
+        margin-left: 50px;
+        max-width: 40rem;
+        padding: 1.5rem;
+        position: relative;
+        z-index: 222;
+   
+    }
+    .contents .boxs.boxes{
+        margin-top: 30rem;
+        position: absolute;
+        z-index: 222;
+    }
+    
+    .title {
+        font-size: 2rem;
+       
+    }
+    
+   
+} 
