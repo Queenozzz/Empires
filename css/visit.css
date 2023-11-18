@@ -525,7 +525,7 @@ hr {
     justify-content: center;
     align-items: center;
     padding: 80px 100px;
-    color: #111222;
+   
 }
 
 
@@ -544,9 +544,9 @@ hr {
 
 
 .title {
-    color: #333;
+    color: #111222f3;
     font-size: 4rem;
-    margin-bottom: 50px;
+    margin: 60px 0;
     text-transform: uppercase;
    
 }
@@ -587,8 +587,7 @@ hr {
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(47, 160, 252, 0.801); 
     transform: translate(-50px, 20px);
-   
-  
+    color: #5e5e5e;
    
 }
 .contents .boxs.boxes,
@@ -605,10 +604,12 @@ hr {
 .titles{
     font-size: 3rem;
     margin: 40px;
+    color: #111222;
+    text-transform: uppercase;
 
 }
 
-.boxes{
+.boxes.travel{
     width: 100%;
     height: 35px;
     position: absolute;
@@ -623,12 +624,13 @@ hr {
     border: 5px solid rgb(255, 255, 255, 0.027);
     border-radius: 5px;
     box-shadow: 5px 5px 10px rgba(47, 160, 252, 0.363); 
+    text-transform: capitalize;
    
     
 }
 
 
-.boxes span{
+.boxes.travel span{
     letter-spacing: 3px;
     width: 100%;
     height: 100%;
@@ -768,6 +770,7 @@ hr {
 
     .title{
         font-size: 3.2rem;
+       
     }
 
     .titles{
@@ -775,11 +778,11 @@ hr {
     }
 
     
-   .boxes{
+   .boxes.travel{
         height: 40px;
     }
 
-    .boxes span{
+    .boxes.travel span{
         animation: lines 25s linear infinite;
 
     }
@@ -869,12 +872,16 @@ hr {
         margin-top: 25rem 0;
     }
 
+    .title{
+        text-transform: capitalize;
+        font-size: 2.4rem;
+    }
     
-    .boxes{
+    .boxes.travel{
         height: 55px;
     }
     
-    .boxes span{
+    .boxes.travel span{
         animation: lines 30s linear infinite;
 
     }
